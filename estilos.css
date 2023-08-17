@@ -1,0 +1,72 @@
+ /* Estilo general del cuerpo */
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+#container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo del selector */
+#selector {
+    padding: 8px;
+    font-size: 16px;
+}
+
+/* Estilo del cuadro de búsqueda */
+#inputBusqueda {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+/* Estilo del botón de búsqueda */
+#botonEnviar {
+    padding: 10px 20px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Estilo de la lista de resultados */
+#listaResultados {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* Estilo de los elementos de la lista de resultados */
+#listaResultados li {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Cambio de color al pasar el ratón por encima */
+#listaResultados li:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#noResultados {
+    display: none;
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
