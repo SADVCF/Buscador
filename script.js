@@ -28,6 +28,7 @@ boton.addEventListener("click", buscar);
 
 function buscar() {
     resultados.innerHTML = "";
+    
     noResultados.style.display = "none"; // Oculta el mensaje al realizar una nueva búsqueda
 
     fetch(buscador)
@@ -74,4 +75,8 @@ function verificar(event) {
     if ((event.keyCode < 65 || event.keyCode > 90) && event.keyCode !== 8 && event.keyCode !== 32) {
         event.preventDefault();
     }
+}
+
+function vaciar(){
+    elementoInput.value="";
 }

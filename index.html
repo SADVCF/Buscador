@@ -6,7 +6,7 @@
     <title>Buscador</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
+<body onload=vaciar()>
     <select id="selector">
         <option value="peliculas.json">Películas</option>
         <option value="series.json">Series</option>
@@ -17,9 +17,10 @@
     <button id="botonEnviar">Buscar</button>
     </div>
     <ul id="listaResultados">
-        <p id="noResultados">No se encontraron resultados.</p>
         
     </ul>
+    <p id="noResultados">No se encontraron resultados.</p>
+
 
 
     
