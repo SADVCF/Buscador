@@ -10,9 +10,19 @@ opcionBusqueda.addEventListener("change", function () {
     buscador = opcionBusqueda.value;
     resultados.innerHTML = "";
     noResultados.style.display = "none"; // Oculta el mensaje al cambiar la opción
-    let evento = new CustomEvent("aviso");
+    let evento = new CustomEvent("aviso"); /*Evento personalizado que advierte sobre
+                                            que archivo estamos buscando*/
     opcionBusqueda.dispatchEvent(evento);
+
 })
+
+opcionBusqueda.addEventListener("aviso",avisar);
+
+function avisar(){
+    alert("El archivo JSON actual es: "+buscador);
+}
+
+
 
 boton.addEventListener("click", buscar);
 
